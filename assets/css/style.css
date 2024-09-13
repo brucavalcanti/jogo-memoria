@@ -1,5 +1,9 @@
 body{
   background-color: #eef9bf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .gameTitle{
@@ -14,7 +18,13 @@ body{
 #boardGame{
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.frente{
+  width: 50px;
 }
 
 .card{
@@ -27,6 +37,14 @@ body{
   justify-content: center;
   margin: 5px;
   transition: 2000ms;
+}
+
+.back{
+  display: none;
+}
+
+.toFront{
+  display: inline !important;
 }
 
 .turn{
